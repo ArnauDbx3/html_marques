@@ -1,0 +1,413 @@
+:root {
+    /* Fons de la pàgina */
+    --fons-clar: #5b8255;
+    --fons-fosc: #355a2f;
+
+    /* Capçalera i footer */
+    --capcalera-centre: #72ae6a;
+    --capcalera-vora: #4d963b;
+
+    /* Botons */
+    --boto: #2f5226;
+    --boto-hover: #223d1c;
+
+    /* Accent (hover) */
+    --accent: #ffb454;
+
+    /* Text */
+    --text: #ffffff;
+    --text-formulari: #2b3a24;
+
+    /* Targetes i vores */
+    --targeta-fons: rgba(0, 0, 0, 0.2);
+    --vora-suau: rgba(255, 255, 255, 0.3);
+    --vora-boto: rgba(255, 255, 255, 0.5);
+
+    /* Tipografia */
+    --font: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--text);
+    background: linear-gradient(var(--fons-clar), var(--fons-fosc));
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.main-header {
+    background: radial-gradient(var(--capcalera-centre), var(--capcalera-vora));
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--vora-boto);
+}
+
+.logo {
+    line-height: 0;
+}
+
+.logo a {
+    display:block;
+}
+
+.logo img {
+    height:7rem;
+    width:auto;
+    display:block;
+}
+
+.menu-list {
+    display: flex;
+    gap: 2.5rem;
+    list-style-type: none;
+}
+
+.menu-list a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    font-size:1.4rem;
+    transition: color 0.3s ease;
+}
+
+.menu-list a:hover {
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+main {
+    padding: 2rem;
+    max-width: 93%;
+    margin: 0 auto;
+    flex:1;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--text);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cataleg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    column-gap: 2rem;
+    row-gap: 0.8rem;
+    margin-top: 2rem;
+}
+
+.joc {
+    background-color: var(--targeta-fons);
+    border: 1px solid var(--vora-boto);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    display: grid;
+    grid-row: span 13;
+    grid-template-rows: subgrid;
+    row-gap: 0.8rem;
+}
+
+.joc img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 6px;
+    object-fit: cover;
+    display: block;
+    justify-self: center;
+    align-self: start;
+}
+
+.joc ul {
+    padding-left: 1.4rem;
+}
+
+.joc footer {
+    text-align:center;
+}
+
+.joc footer a {
+    display:inline-block;
+    background-color: var(--boto);
+    color: var(--text);
+    padding: 0.9rem 2.2rem;
+    border: 1px solid var(--vora-boto);
+    border-radius:  6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.joc footer a:hover{
+    background-color: var(--boto-hover);
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+main article {
+    background-color: var(--targeta-fons);
+    border: 1px solid var(--vora-suau);
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+main article img {
+    max-width: 50%; 
+    object-fit: cover;
+    border-radius: 6px;
+    align-self: center;
+}
+
+table {
+    width: 100%;
+    max-width: 40rem;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    align-self: center;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+th, td {
+    padding: 0.8rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--vora-suau);
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+tfoot td {
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+main article iframe {
+    width: 90%;
+    max-width: 60rem;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 6px;
+    align-self: center;
+    border: 2px solid var(--vora-suau);
+}
+
+main article a {
+    color: #a8e6cf;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.boto-reviews {
+    align-self: flex-start;
+    display: inline-block;
+    background-color: var(--boto);
+    color: var(--text);
+    padding: 0.7rem 1.6rem;
+    border: 1px solid var(--vora-boto);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+main article a.boto-reviews:hover {
+    background-color: var(--boto-hover);
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+main article a:hover {
+    color: var(--accent);
+}
+
+main aside {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+main aside a{
+    display: inline-block;
+    background-color: var(--boto);
+    color: var(--text);
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var(--vora-boto);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+main aside a:hover {
+    background-color: var(--boto-hover);
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+.layout-contacte{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:2rem;
+    align-items:start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#formulari-contacte {
+    background-color: var(--targeta-fons);
+    border: 1px solid var(--vora-suau);
+    border-radius:8px;
+    padding: 2.5rem;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid var(--vora-suau);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--text-formulari);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    padding: 0.8rem 1.8rem;
+    background-color: var(--boto);
+    color: var(--text);
+    border: 1px solid var(--vora-boto);
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: var(--boto-hover);
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+body > footer {
+    background: radial-gradient(var(--capcalera-centre), var(--capcalera-vora));
+    padding: 1.5rem 2rem;
+    margin-top: 3rem;
+    text-align:center;
+    font-size:0.95rem;
+    border-top:2px solid var(--vora-suau);
+    font-weight: bold;
+}
+
+.layout-contacte aside.info-contacte {
+    margin-top: 0;
+    background-color: var(--targeta-fons);
+    border: 1px solid var(--vora-suau);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+
+
+@media (max-width: 40rem) {
+    .main-header{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .menu-list{
+        gap:1.2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .joc, main article {
+        padding: 1rem;
+    }
+    
+    main article img {
+        max-width: 100%;
+    }
+
+    main article iframe {
+        width: 100%;
+    }
+
+    .layout-contacte {
+        grid-template-columns: 1fr;
+    }
+
+    #formulari-contacte {
+        padding: 1.5rem;
+    }
+}

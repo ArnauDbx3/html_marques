@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacte - Gamecamps</title>
+        <meta name="description" content="Formulari de contacte de Gamecamps">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/LOGO.png">
+        <link rel="stylesheet" href="css/estils.css">
+    </head>
+    <body>
+        <header class="main-header" id="capcalera">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="img/LOGO.png" alt="Gamecamps logo">
+                </a>
+            </h1>
+            <nav id="menu-principal">
+                <ul class="menu-list">
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="fitxa.html">Fitxa</a></li>
+                    <li><a href="contacte.html">Contacte</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="layout-contacte">
+            <section id="seccio-formulari">
+                <header><h2>Formulari de contacte</h2></header>
+                <form id="formulari-contacte" action="#" method="post">  
+                    <div class="form-group">
+                        <label for="nom">Nom:</label>
+                        <input type="text" placeholder="Paco Perez" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mail">Correu electrònic:</label>
+                        <input type="email" placeholder="paco@gmail.cat" id="mail" name="mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefon">Telèfon:</label>
+                        <input type="tel" placeholder="666 123 456" id="telefon" name="telefon">
+                    </div>
+                    <div class="form-group">
+                        <label for="assumpte">Assumpte:</label>
+                        <select id="assumpte" name="assumpte">
+                            <option value="consulta">Consulta general</option>
+                            <option value="estat">Estat d'un joc</option>
+                            <option value="reserva">Reserva un joc</option>
+                            <option value="venda">Venda d'un joc</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="missatge">Missatge:</label>
+                        <textarea id="missatge" placeholder="Hola, m'interessaria saber sobre..." name="missatge" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="boto-enviar">Enviar missatge</button>
+                    </div>
+                </form>
+            </section>
+
+            <aside class="info-contacte">
+                <h3>Informació d'interès</h3>
+                <h4>On som?</h4>
+                <p>C/ Aiguablava</p>
+
+                <h4>Horari</h4>
+                <p>Dilluns a divendres -> 09:00h - 20:00h<br>Dissabtes -> 10:00h - 16:00h</p>
+            </aside>
+
+        </main>
+        <footer>
+            <p>&copy; 2026 Gamecamps. Tots els drets reservats.<br>Totes les imatges són lliures de drets d'autor.</p>
+        </footer>
+
+    </body>
+</html>
