@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/LOGO.png">
     <link rel="stylesheet" href="css/estils.css">
+    <script src="js/cataleg.js" defer></script>
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -39,187 +41,33 @@
                     veure'ns i emporta't alguna joia!</p>
             </article>
         </section>
-
         <section id="seccio-cerca">
+            <!--Camp per cercar-->
             <header>
                 <h2>Catàleg</h2>
             </header>
+            <div class="controls-cerca">
+                <label for="cerca-titol">Cerca per títol</label>
+                <input type="text" id="cerca-titol" placeholder="Ex. Mario">
+
+                <label for="filtre-plataforma">Plataforma:</label>
+                <select id="filtre-plataforma">
+                    <option value="">Totes</option>
+                    <option value="Super Nintendo">Super Nintendo</option>
+                    <option value="Nintendo 64">Nintendo 64</option>
+                    <option value="PlayStation">PlayStation</option>
+                    <option value="Game Boy Advance">Game Boy Advance</option>
+                    <option value="Game Boy Color">Game Boy Color</option>
+                    <option value="Sega Saturn">Sega Saturn</option>
+                    <option value="Dreamcast">Dreamcast</option>    
+                </select>
+            </div>
+                <p id="comptador-resultats"></p>
+                <p id="missatge-buit" class="ocult">No s'ha trobat cap joc</p>
         </section>
 
         <!--Catàleg amb jocs-->
-        <section id="cataleg" class="cataleg-grid">
-            <article class="joc" id="joc-super-mario-world">
-            <h3>Super Mario World</h3>
-            <p><strong>Gèneres</strong></p>
-            <ul class="genere-llista">
-                <li>Acció</li>
-                <li>Plataformes</li>
-                <li>2D</li>
-            </ul>
-            <p><strong>Plataforma</strong></p>
-            <p class="plataforma">Super Nintendo</p>
-            <p><strong>Preu</strong></p>
-            <p class="preu">39.99€</p>
-            <p><strong>Valoració</strong></p>
-            <p class="valoracio">4.6/5</p>
-            <p><strong>Descripció</strong></p>
-            <p>Clàssic plataformes en 2D on Mario i Luigi exploren un món ple de monstres, secrets i aventures per
-                salvar la princesa Peach.</p>
-            <img src="img/SMWorld.jpg" alt="Cartutx de Super Mario World">
-            </article>
-
-            <article class="joc">
-                <h3>The Legend of Zelda: Ocarina of Time</h3>
-                <p><strong>Gèneres</strong></p>
-                <ul class="genere-llista">
-                    <li>Aventura</li>
-                    <li>Acció</li>
-                    <li>Trencaclosques</li>
-                    <li>Fantasia</li>
-                    <li>3D</li>
-                </ul>
-                <p><strong>Plataforma</strong></p>
-                <p class="plataforma">Nintendo 64</p>
-                <p><strong>Preu</strong></p>
-                <p class="preu">49.99€</p>
-                <p><strong>Valoració</strong></p>
-                <p class="valoracio">5/5</p>
-                <p><strong>Descripció</strong></p>
-                <p>Una aventura revolucionària que va definir el gènere d'acció-aventura en 3D, on el seu protagonista
-                    viatja a través del temps per salvar el regne d'Hyrule i derrotar el malvat Ganondorf.</p>
-                <img src="img/OOT.jpg" alt="Cartutx de The Legend of Zelda: Ocarina of Time">
-                <footer>
-                    <a href="fitxa.html">Veure més</a>
-                </footer>
-            </article>
-
-            <article class="joc" id="joc-final-fantasy-vii">
-                <h3>Final Fantasy VII</h3>
-                <p><strong>Gèneres</strong></p>
-                <ul class="genere-llista">
-                    <li>Rol</li>
-                    <li>Aventura</li>
-                    <li>Fantasia</li>
-                    <li>JRPG</li>
-                    <li>3D</li>
-                </ul>
-                <p><strong>Plataforma</strong></p>
-                <p class="plataforma">PlayStation</p>
-                <p><strong>Preu</strong></p>
-                <p class="preu">49.99€</p>
-                <p><strong>Valoració</strong></p>
-                <p class="valoracio">4.9/5</p>
-                <p><strong>Descripció</strong></p>
-                <p>Un JRPG històric protagonitzat per Cloud Strife i un grup ecoterrorista que lluiten per salvar el món
-                    d'una corporació malvada i un enemic antic.</p>
-                <img src="img/FFVII.jpg" alt="Figures de Cloud Strife">
-            </article>
-
-            <article class="joc" id="joc-lylat-wars">
-                <h3>Lylat Wars</h3>
-                <p><strong>Gèneres</strong></p>
-                <ul class="genere-llista">
-                    <li>Acció</li>
-                    <li>Ciència ficció</li>
-                    <li>Shoot'em up</li>
-                </ul>
-                <p><strong>Plataforma</strong></p>
-                <p class="plataforma">Nintendo 64</p>
-                <p><strong>Preu</strong></p>
-                <p class="preu">29.99€</p>
-                <p><strong>Valoració</strong></p>
-                <p class="valoracio">4.4/5</p>
-                <p><strong>Descripció</strong></p>
-                <p>Un shooter espacial sobre raïls on en Fox McCloud i el seu equip piloten les naus per defensar el
-                    sistema Lylat de les forces d'Andross.</p>
-                <img src="img/Starfox.jpg" alt="Nintendo 64 amb comandament blau">
-            </article>
-
-            <article class="joc" id="joc-the-legend-of-zelda-majoras-mask">
-                <h3>The Legend of Zelda: Majora's Mask</h3>
-                <p><strong>Gèneres</strong></p>
-                <ul class="genere-llista">
-                    <li>Aventura</li>
-                    <li>Acció</li>
-                    <li>Trencaclosques</li>
-                    <li>Fantasia</li>
-                    <li>3D</li>
-                </ul>
-                <p><strong>Plataforma</strong></p>
-                <p class="plataforma">Nintendo 64</p>
-                <p><strong>Preu</strong></p>
-                <p class="preu">49.99€</p>
-                <p><strong>Valoració</strong></p>
-                <p class="valoracio">4.8/5</p>
-                <p><strong>Descripció</strong></p>
-                <p>Una continuació fosca i melancòlica d'Ocarina of Time on en Link disposa de 3 dies per evitar que la
-                    Lluna caigui sobre el regne de Termina, utilitzant màscares màgiques per transformar-se i resoldre
-                    trencaclosques.</p>
-                <img src="img/Majoras.jpg" alt="Diversos comandaments de Nintendo 64">
-            </article>
-
-            <article class="joc" id="joc-super-mario-64">
-                <h3>Super Mario 64</h3>
-                <p><strong>Gèneres</strong></p>
-                <ul class="genere-llista">
-                    <li>Acció</li>
-                    <li>Plataformes</li>
-                    <li>3D</li>
-                    <li>Aventura</li>
-                </ul>
-                <p><strong>Plataforma</strong></p>
-                <p class="plataforma">Nintendo 64</p>
-                <p><strong>Preu</strong></p>
-                <p class="preu">49.99€</p>
-                <p><strong>Valoració</strong></p>
-                <p class="valoracio">5/5</p>
-                <p><strong>Descripció</strong></p>
-                <p>El joc que va establir les bases dels plataformes en 3D, destacant per la seva kinestètica i un
-                    disseny de nivells totalment innovador.</p>
-                <img src="img/SM64.jpg" alt="Cartutx de Super Mario 64">
-            </article>
-
-            <article class="joc" id="joc-donkey-kong-country">
-                <h3>Donkey Kong Country</h3>
-                <p><strong>Gèneres</strong></p>
-                <ul class="genere-llista">
-                    <li>Acció</li>
-                    <li>Plataformes</li>
-                    <li>2D</li>
-                </ul>
-                <p><strong>Plataforma</strong></p>
-                <p class="plataforma">Super Nintendo, Game Boy Advance, Game Boy Color</p>
-                <p><strong>Preu</strong></p>
-                <p class="preu">39.99€</p>
-                <p><strong>Valoració</strong></p>
-                <p class="valoracio">4.7/5</p>
-                <p><strong>Descripció</strong></p>
-                <p>Plataformes 2D aclamat pels seus revolucionaris gràfics pre-renderitzats i una banda sonora
-                    memorable, on en Donkey Kong i en Diddy Kong lluiten per recuperar la seva reserva de plàtans.</p>
-                <img src="img/DKCountry.jpg" alt="Caixa de Donkey Kong Country">
-            </article>
-
-            <article class="joc" id="joc-castlevania-symphony-of-the-night">
-                <h3>Castlevania: Symphony of the Night</h3>
-                <p><strong>Gèneres</strong></p>
-                <ul class="genere-llista">
-                    <li>Acció</li>
-                    <li>Plataformes</li>
-                    <li>Rol</li>
-                    <li>Metroidvania</li>
-                </ul>
-                <p><strong>Plataforma</strong></p>
-                <p class="plataforma">PlayStation, Sega Saturn</p>
-                <p><strong>Preu</strong></p>
-                <p class="preu">49.99€</p>
-                <p><strong>Valoració</strong></p>
-                <p class="valoracio">4.9/5</p>
-                <p><strong>Descripció</strong></p>
-                <p>El joc que va definir i perfeccionar el gènere "Metroidvania", amb un món interconnectat, exploració
-                    profunda i una combinació de plataformes i acció amb elements de rol.</p>
-                <img src="img/Castlevania.jpg" alt="Consola Sony Playstation">
-            </article>
-        </section>
+        <section id="cataleg" class="cataleg-grid"></section>
     </main>
     <footer>
         <p>&copy; 2026 Gamecamps. Tots els drets reservats.<br>Totes les imatges són lliures de drets d'autor.</p>

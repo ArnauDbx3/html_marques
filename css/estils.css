@@ -370,9 +370,50 @@ body > footer {
     gap: 1rem;
 }
 
+.joc.estoc-baix{
+    border-color: var(--accent);
+    box-shadow: 0 0 8px var(--accent)
+}
 
+.joc.estoc-baix .preu {
+    color: var(--accent);
+    font-weight: bold;
+}
 
+.controls-cerca{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem 1.2rem;
+    margin-bottom: 1rem;
+}
 
+.controls-cerca label {
+    font-weight: bold;
+}
+
+.controls-cerca input, .controls-cerca select {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--vora-suau);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--text-formulari);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+#comptador-resultats {
+    margin-bottom: 0.5rem;
+}
+
+#missatge-buit {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.ocult {
+    display: none;
+}
 
 @media (max-width: 40rem) {
     .main-header{
