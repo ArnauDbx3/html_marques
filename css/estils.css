@@ -415,6 +415,17 @@ body > footer {
     display: none;
 }
 
+.form-group input.error, .form-group select.error, .form-group textarea.error {
+    border: 2px solid #ff8a8a;
+}
+
+.missatge-error {
+    color: #ffb3b3;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+
 @media (max-width: 40rem) {
     .main-header{
         flex-direction: column;
