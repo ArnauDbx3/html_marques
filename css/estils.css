@@ -372,7 +372,7 @@ body > footer {
 
 .joc.estoc-baix{
     border-color: var(--accent);
-    box-shadow: 0 0 8px var(--accent)
+    box-shadow: 0 0 8px var(--accent);
 }
 
 .joc.estoc-baix .preu {
@@ -419,12 +419,63 @@ body > footer {
     border: 2px solid #ff8a8a;
 }
 
+.form-group input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin-right: 0.5rem;
+}
+
 .missatge-error {
     color: #ffb3b3;
     font-size: 0.9rem;
     font-weight: bold;
 }
 
+#comptador-caracters {
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+#comptador-caracters.excedit {
+    color: #ff8a8a;
+    font-weight: bold;
+}
+
+#resum-confirmacio {
+    margin-top: 1.5rem;
+}
+
+body.mode-fosc {
+    --fons-clar: #1f2a1d;
+    --fons-fosc: #0f160e;
+    --capcalera-centre: #2e4a2a;
+    --capcalera-vora: #1f3a1b;
+    --boto: #3d6b32;
+    --boto-hover: #2f5226;
+    --targeta-fons: rgba(0, 0, 0, 0.45);
+}
+
+#boto-tema{
+    padding: 0.6rem 1.2rem;
+    background-color: var(--boto);
+    color: var(--text);
+    border: 1px solid var(--vora-boto);
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#boto-tema:hover {
+    background-color: var(--boto-hover);
+    color: var(--accent);
+}
+
+#menu-principal {
+    display:flex;
+    align-items:center;
+    gap:2rem;
+}
 
 @media (max-width: 40rem) {
     .main-header{
@@ -461,5 +512,11 @@ body > footer {
 
     #formulari-contacte {
         padding: 1.5rem;
+    }
+    
+    #menu-principal {
+        display:flex;
+        align-items:center;
+        gap:2rem;
     }
 }
