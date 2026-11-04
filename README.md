@@ -1,12 +1,11 @@
 # RA 3 - Gamecamps Fase 2
 - **Dades i targetes**<br>
 Videojocs esborrats d'index.html i passats a `cataleg.js` com a constants, ja que les dades no es modificaràn (només s'afegiran nous jocs).
-A `index.js` es creen les targetes amb tots els seus camps (cadascun un element). L'IVA s'aplica directament sobre el preu i es mostra
-el total final. <br> **Funcions** (index.js): calculaPreuAmbIva, creaTargeta, creaEtiqueta <br>
+L'IVA s'aplica directament sobre el preu i es mostra el total final.
+<br> **Funcions** (index.js): calculaPreuAmbIva, creaTargeta, creaEtiqueta <br>
 
 - **Cerca i filtre**<br>
-A `index.js` també es troba el cercador i els filtres per cercar videojocs. Cadascun és una funció particular i es fusionen amb
-la funció actualitzacioCataleg. Als jocs amb baix estoc se'ls aplica una distinció amb la vora de color i els que tenen
+A `index.js` també es troba el cercador i els filtres per cercar videojocs. Als jocs amb baix estoc se'ls aplica una distinció amb la vora de color i els que tenen
 estoc = 0 canvien el preu per "Esgotat". <br> **Funcions** (index.js): filtraJocs, actCataleg, actualitzacioCataleg
 
 - **Formulari**<br>
