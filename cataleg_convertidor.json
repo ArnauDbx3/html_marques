@@ -1,0 +1,176 @@
+{
+  "tenda": {
+    "nom": {
+      "@tipus": "retro",
+      "#text": "Gamecamps"
+    },
+    "divisa": {
+      "@moneda": "€"
+    },
+    "ultimaAct": "2026-08-01",
+    "cataleg": {
+      "joc": [
+        {
+          "nom": {
+            "@codi": "JOC-001",
+            "#text": "Super Mario World"
+          },
+          "generes": {
+            "genere": [
+              "Acció",
+              "Plataformes",
+              "2D"
+            ]
+          },
+          "plataforma": "Super Nintendo",
+          "preu": "39.99",
+          "valoracio": "4.6",
+          "estoc": "9",
+          "dataSortida": "1990-11-21",
+          "descripcio": "Clàssic plataformes en 2D on Mario i Luigi exploren un mon ple de monstres, secrets i aventures per salvar la princesa Peach."
+        },
+        {
+          "nom": {
+            "@codi": "JOC-002",
+            "#text": "The Legend of Zelda: Ocarina of Time"
+          },
+          "generes": {
+            "genere": [
+              "Aventura",
+              "Acció",
+              "Trencaclosques",
+              "Fantasia",
+              "3D"
+            ]
+          },
+          "plataforma": "Nintendo 64",
+          "preu": "49.99",
+          "valoracio": "5.0",
+          "estoc": "5",
+          "dataSortida": "1998-11-21",
+          "descripcio": "Una aventura revolucionària que va definir el gènere d'acció-aventura en 3D, on el seu protagonista viatja a través del temps per salvar el regne d'Hyrule i derrotar el malvat Ganondorf."
+        },
+        {
+          "nom": {
+            "@codi": "JOC-003",
+            "#text": "Final Fantasy VII"
+          },
+          "generes": {
+            "genere": [
+              "Rol",
+              "Aventura",
+              "Fantasia",
+              "JRPG",
+              "3D"
+            ]
+          },
+          "plataforma": "PlayStation",
+          "preu": "49.99",
+          "valoracio": "4.9",
+          "estoc": "23",
+          "dataSortida": "1997-01-31",
+          "descripcio": "Un JRPG històric protagonitzat per Cloud Strife i un grup ecoterrorista que lluiten per salvar el món d'una corporació malvada i un enemic antic."
+        },
+        {
+          "nom": {
+            "@codi": "JOC-004",
+            "#text": "Lylat Wars"
+          },
+          "generes": {
+            "genere": [
+              "Acció",
+              "Ciència ficció",
+              "Shoot'em up"
+            ]
+          },
+          "plataforma": "Nintendo 64",
+          "preu": "29.99",
+          "valoracio": "4.4",
+          "estoc": "12",
+          "dataSortida": "1997-01-31",
+          "descripcio": "Un shooter espacial sobre raïls on en Fox McCloud i el seu equip piloten les naus per defensar sistema Lylat de les forces d'Andross."
+        },
+        {
+          "nom": {
+            "@codi": "JOC-005",
+            "#text": "The Legend of Zelda: Majora's Mask"
+          },
+          "generes": {
+            "genere": [
+              "Aventura",
+              "Acció",
+              "Trencaclosques",
+              "Fantasia",
+              "3D"
+            ]
+          },
+          "plataforma": "Nintendo 64",
+          "preu": "49.99",
+          "valoracio": "4.8",
+          "estoc": "9",
+          "dataSortida": "2000-04-27",
+          "descripcio": "Una continuació fosca i melancòlica d'Ocarina of Time on en Link disposa de 3 dies per evitar que la Lluna caigui sobre el regne de Termina, utilitzant màscares màgiques per transformar-se i resoldre trencaclosques."
+        },
+        {
+          "nom": {
+            "@codi": "JOC-006",
+            "#text": "Super Mario 64"
+          },
+          "generes": {
+            "genere": [
+              "Acció",
+              "Plataformes",
+              "3D",
+              "Aventura"
+            ]
+          },
+          "plataforma": "Nintendo 64",
+          "preu": "49.99",
+          "valoracio": "5.0",
+          "estoc": "15",
+          "dataSortida": "1996-06-23",
+          "descripcio": "El joc que va establir les bases dels plataformes en 3D, destacant per la seva kinestètica i un disseny de nivells totalment innovador."
+        },
+        {
+          "nom": {
+            "@codi": "JOC-007",
+            "#text": "Donkey Kong Country"
+          },
+          "generes": {
+            "genere": [
+              "Acció",
+              "Plataformes",
+              "2D"
+            ]
+          },
+          "plataforma": "Super Nintendo",
+          "preu": "39.99",
+          "valoracio": "4.7",
+          "estoc": "10",
+          "dataSortida": "1994-11-21",
+          "descripcio": "Plataformes 2D aclamat pels seus revolucionaris gràfics pre-renderitzats i una banda sonora memorable, on en Donkey Kong i en Diddy Kong lluiten per recuperar la seva reserva de plàtans"
+        },
+        {
+          "nom": {
+            "@codi": "JOC-008",
+            "#text": "Castlevania: Symphony of the Night"
+          },
+          "generes": {
+            "genere": [
+              "Acció",
+              "Plataformes",
+              "Rol",
+              "Metroidvania"
+            ]
+          },
+          "plataforma": "PlayStation",
+          "preu": "49.99",
+          "valoracio": "4.9",
+          "estoc": "8",
+          "dataSortida": "1997-10-31",
+          "descripcio": "El joc que va definir i perfeccionar el gènere \"Metroidvania\", amb un món interconnectat, exploració profunda i una combinació de plataformes i acció amb elements de rol."
+        }
+      ]
+    }
+  }
+}

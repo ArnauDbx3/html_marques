@@ -1,0 +1,9 @@
+{
+	"codi": "JOC-004",
+    "titol": "Hades",
+    "plataformes": ["PC", "Switch"],
+    "preu": 24.99,
+	"estoc": 7,
+	"valoracio": 4.8,
+	"generes": ["Roguelike", "Acció"]
+}
